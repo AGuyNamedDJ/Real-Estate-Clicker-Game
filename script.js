@@ -4,9 +4,12 @@
 let gameState = 0{
     totalNumOfResources: 0,
     numOfResourcesMade: 0
+};
+
 
     //Producer Values
-};
+
+let passiveIncomeGenerated: 
 
 let totalNumOfResources = 0;
 
@@ -29,3 +32,14 @@ function cashIncrementer() {
 let homeGrantBttnEle = document.getElementById("home-grant-bttn");
 
 // Event Listener
+
+
+// Pause Button
+
+let pauseBttnEle = document.getElementByID("pause-bttn");
+
+function pauseIntervalLoop(){
+    clearInterval(gameState.intervalLoopID);
+};
+
+pauseBttnEle.addEventListener("click", [PauseIntervalLoop])
