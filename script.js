@@ -1,14 +1,15 @@
-// You will write the JavaScript code for your Cookie Clicker game here! 
-// Adding Event Listener to HTML Element
 // State
-let gameState = 0{
-    totalNumOfResources: 0,
-    numOfResourcesMade: 0
+let gameState = {
+    totalNumOfProperties: 0,
+    numOfMonthlyIncome: 0,
+    intervalLoopID: undefined
 };
 
+// Variables
+let MonthlyIncomeText = document.getElementByID("monthly-income");
+let amountOfMoneyEle = document.getElementById("amount-of-money");
 
-    //Producer Values
-
+// Event Listeners
 let passiveIncomeGenerated: 
 
 let totalNumOfResources = 0;
