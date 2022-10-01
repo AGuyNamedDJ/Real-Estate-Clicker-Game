@@ -1,18 +1,24 @@
 # Real-Estate-Cookie-Cutter
 
 This is a clicker based game.
+
 The goal is to increase your income as high as possible.
+
 With more income, you have chances to purchase even better properties to producer higher income.
 
 How high can you go?
+
+---
 
 Things to Review
 Fix Home Grant Picture
 Fix 300 unit highrise picture
 
-Game Design
+---
 
+Game Design
 Clicker = Money (1 Second = 1 Months Rent Payments)
+
 Sections
 Total Resource Count Display
 
@@ -33,7 +39,10 @@ Abandoned 2 Unit Building, $3,200 per Month, Cost $10,000
 300 Unit Highrise, $600,000 per Month Cost $75,000,000
 600 Unit Highrise, $1,800,000 per Month, Cost $125,000,000
 
+---
+
 Requirements
+
 Variables
 Loop
 If Else If Statements
