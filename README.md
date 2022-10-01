@@ -1,8 +1,12 @@
 # Real-Estate-Cookie-Cutter
 
+Review
+Fix Home Grant Picture
+Fix 300 unit highrise picture
+
 Thoughts
 
-Clicker = Money(1 Second = 1 Months Rent Payments)
+Clicker = Money (1 Second = 1 Months Rent Payments)
 Sections
 Total Resource Count Display
 
@@ -14,13 +18,14 @@ Money (Every Second = 1 Month's Rent)
 
 Resource Producers
 Home Grant, $1,000, Cost $1
-Abandoned House, $1,000 per Month, Cost $1,000
-Abandoned 2 Unit Building, $2,000 per Month, Cost $10,000
-4 Unit Building, $6,000 per Month, Cost $500,000
-20 Unit Lowrise, $35,000 per Month, Cost $5,000,000
-50 Unit Midrise, $90,000 per Month, Cost $20,000,000
-100 Unit Highrise, $200,000 per Month, Cost $60,000,000
-300 Unit Skyscraper, $600,000 per Month Cost $125,000,000
+Abandoned House, $1,400 per Month, Cost $1,000
+Abandoned 2 Unit Building, $3,200 per Month, Cost $10,000
+4 Unit Building, $7,500 per Month, Cost $300,000
+20 Unit Lowrise, $35,000 per Month, Cost $2,500,000
+50 Unit Midrise, $90,000 per Month, Cost 15,000,000
+100 Unit Midrise, $200,000 per Month, Cost $30,000,000
+300 Unit Highrise, $600,000 per Month Cost $75,000,000
+600 Unit Highrise, $1,800,000 per Month, Cost $125,000,000
 
 Requirements
 Variables
@@ -28,6 +33,6 @@ Loop
 If Else If Statements
 Functions
 Arrays
-DOM MAnipulation -->
+DOM MAnipulation
 CSS; flexbox, grid
 User Experience
