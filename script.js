@@ -17,6 +17,25 @@ function amountOfMoneyIncrementer(){
     amountOfMoneyEle.textContent = gameState.totalNumOfProperties;
 };
 
+// Event Listener
+amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer);
+
+// Income Producers
+    // First Producer
+    let homeGrantBttnEle = document.getElementByID("home-grant");
+    
+    function homeGrantPurchaser(){
+        if (gameState.totalNumOfProperties >= 5){
+            gameState.totalNumOfProperties -= 5;
+            amountOfMoneyEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 1;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+    // Callback
+    moneyGrantBttnEle.addEventListener("click", homeGrantPurchaser)
+    // Set Interval & Clear Interval
+
 
 
 
