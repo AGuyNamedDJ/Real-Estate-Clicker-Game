@@ -7,72 +7,62 @@ let gameState = {
 
 // Variables
 let MonthlyIncomeText = document.getElementByID("monthly-income");
-let amountOfMoneyNumEle = document.getElementById("amount-of-money-num");
+let accountBalanceEle = document.getElementById("account-balance");
 
 // Event Listeners
 let amountOfMoneyElement = document.getElementByID("amount-of-money");
 
-function amountOfMoneyIncrementer(){
+function amountOfMoneyIncrementer() {
     gameState.totalNumOfProperties = gameState.totalNumOfProperties + 1;
-    amountOfMoneyNumEle.textContent = gameState.totalNumOfProperties;
+    accountBalanceEle.textContent = gameState.totalNumOfProperties;
 };
 
 // Event Listener
-amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer);
+amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
 
 // Income Producers
     // First Producer
-    let homeOwnerGrantBttnEle = document.getElementByID("home-grant");
+    let homeOwnerGrantBttnEle = document.getElementByID("home-owner-grant");
     
-    function homeGrantPurchaser(){
-        if (gameState.totalNumOfProperties >= 5){
-            gameState.totalNumOfProperties -= 5;
-            amountOfMoneyNumEle.textContent = gameState.totalNumOfProperties;
-            gameState.numOfMonthlyIncome += 1;
+    function homeGrantPurchaser() {
+        if (gameState.totalNumOfProperties >= 0){
+            gameState.totalNumOfProperties -= 0;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 1000;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
     };
+
     // Callback
-    moneyGrantBttnEle.addEventListener("click", homeGrantPurchaser);
+    homeOwnerGrantBttnEle.addEventListener("click", homeGrantPurchaser);
+
     // Set Interval & Clear Interval
-
-
-
-
-
-
-let passiveIncomeGenerated: 
-
-
-let totalNumOfResources = 0;
-
-// Access Element through DOM via getElementById
-let moneyBag.Element = document.getElementById ("amount-of-money");
-console.log ("Here is your money. "), 
-
-
-
-
-// Set up lisener.
-moneyClickerElement.addEventListener("Click, ")
-
-
-function cashIncrementer() {
-    let 
+    let startBttnEle = document.getElementById("start-bttn"); 
+   
+// Begin Game
+function startIncrementingMoney() {
+    gameState.totalNumOfProperties += gameState.numOfMonthlyIncome;
+    accountBalanceEle.textContent = gameState.totalNumOfProperties; 
 };
 
-// Setting Up RE Producer
-let homeGrantBttnEle = document.getElementById("home-grant-bttn");
+// Begin Looping
+function setUpIncrementationInterval() {
+    gameState.intervalLoopID = setInterval(startIncrementingMoney, 1000) 
+    console.log(gameState.intervalLoopID);
+};
 
-// Event Listener
+// Start Bttn
+startBttnEle.addEventListener("click", setUpIncrementationInterval);
 
+// Pause Bttn
+let pauseBttnEle = document.getElementById("pause-bttn");
 
-// Pause Button
-
-let pauseBttnEle = document.getElementByID("pause-bttn");
-
-function pauseIntervalLoop(){
+function pauseIntervalLoop() {
     clearInterval(gameState.intervalLoopID);
 };
 
-pauseBttnEle.addEventListener("click", [PauseIntervalLoop])
+pauseBttnEle.addEventListener("click", pauseIntervalLoop);
+
+// -------END-----------
+
+
