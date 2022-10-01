@@ -14,29 +14,24 @@
     <div class="money-container">
       <img
         style="
-          width: 200px;
-          height: 200px;
+          width: 250px;
+          height: 250px;
           display: flex;
           flex-direction: column;
         "
         src="money-bag.jpg"
+        id="amount-of-money"
       />
 
       <!-- Money Bag Stats -->
       <label>$ Amount of Money:</label>
 
-      <p id="amount-of-money">0</p>
+      <p id="amount-of-money-num"><strong>0</strong></p>
 
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        "
-      >
+      <div style="display: flex; flex-direction: row">
         <label>Income per month: </label>
 
-        <p id="monthly-income">0</p>
+        <p id="monthly-income"><strong>0</strong></p>
       </div>
 
       <!-- Buttons -->
@@ -61,7 +56,7 @@
       >
         <img style="width: 15%; height: 15%" src="money-grant.jpg" />
         <p>$1,000 Home Owner Grant</p>
-        <button id="home-grant-bttn">Recieve</button>
+        <button id="home-owner-grant-bttn">Recieve</button>
       </div>
 
       <!-- Abandoned House -->
@@ -78,7 +73,7 @@
         <img style="width: 15%; height: 15%" src="abandoned-house.jpeg" />
         <p>Cost of Abandoned Home: $1,000</p>
         <p>Income: $1,400 per Month</p>
-        <button id="home-grant-bttn">Buy</button>
+        <button id="abandoned-house-bttn">Buy</button>
       </div>
 
       <!-- Abandoned 2 Unit -->
@@ -95,7 +90,7 @@
         <img style="width: 15%; height: 15%" src="abandoned-2-unit.jpeg" />
         <p>Cost of Abandoned 2 Unit: $3,200</p>
         <p>Income: $10,000 per Month</p>
-        <button id="home-grant-bttn">Buy</button>
+        <button id="abandoned-2-unit-house-bttn">Buy</button>
       </div>
 
       <!-- 4 Unit Multi -->
@@ -112,7 +107,7 @@
         <img style="width: 15%; height: 15%" src="4-unit-lowrise.jpeg" />
         <p>Cost of 4 Unit Multi: $300,000</p>
         <p>Income: $7,500 per Month</p>
-        <button id="home-grant-bttn">Buy</button>
+        <button id="4-unit-building-bttn">Buy</button>
       </div>
 
       <!-- 20 Unit Midrise -->
@@ -129,7 +124,7 @@
         <img style="width: 15%; height: 15%" src="20-unit-midrise.jpg" />
         <p>Cost of 20 Unit Midrise: $2,500,000</p>
         <p>Income: $35,000 per Month</p>
-        <button id="home-grant-bttn">Buy</button>
+        <button id="20-unit-midrise-bttn">Buy</button>
       </div>
 
       <!-- 50 Unit Midrise -->
@@ -146,7 +141,7 @@
         <img style="width: 15%; height: 15%" src="50-unit-midrise.jpg" />
         <p>Cost of 50 Unit Midrise: $15,000,000</p>
         <p>Income: $19,000 per Month</p>
-        <button id="home-grant-bttn">Buy</button>
+        <button id="50-unit-midrise-bttn">Buy</button>
       </div>
 
       <!-- 100 Unit Highrise -->
@@ -163,7 +158,7 @@
         <img style="width: 15%; height: 15%" src="100-unit-highrise.jpg" />
         <p>Cost of 100 Unit Highrise: $30,000,000</p>
         <p>Income: $200,000 per Month</p>
-        <button id="home-grant-bttn">Buy</button>
+        <button id="100-unit-highrise-bttn">Buy</button>
       </div>
 
       <!-- 300 Unit Highrise -->
@@ -183,7 +178,7 @@
         />
         <p>Cost of 300 Uniit Highrise: $75,000,000</p>
         <p>Income: $600,000 per Month</p>
-        <button id="home-grant-bttn">Buy</button>
+        <button id="300-unit-highrise-bttn">Buy</button>
       </div>
 
       <!-- 600 Unit Highrise -->
