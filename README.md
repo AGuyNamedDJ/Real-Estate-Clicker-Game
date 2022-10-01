@@ -1,10 +1,16 @@
 # Real-Estate-Cookie-Cutter
 
-Review
+This is a clicker based game.
+The goal is to increase your income as high as possible.
+With more income, you have chances to purchase even better properties to producer higher income.
+
+How high can you go?
+
+Things to Review
 Fix Home Grant Picture
 Fix 300 unit highrise picture
 
-Thoughts
+Game Design
 
 Clicker = Money (1 Second = 1 Months Rent Payments)
 Sections
