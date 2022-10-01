@@ -69,7 +69,97 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     // Callback
     abandoned2UnitHouseBttnEle.addEventListener("click", abandoned2UnitHousePurchaser);
 
+    // Fourth Producer
+    let fourUnitMultiBttnEle = document.getElementByID("four-unit-multi");
     
+    function fourUnitMultiPurchaser() {
+        if (gameState.totalNumOfProperties >= 300000){
+            gameState.totalNumOfProperties -= 300000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 7500;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    fourUnitMultiBttnEle.addEventListener("click", fourUnitMultiPurchaser);
+
+    // Fifth Producer
+    let twentyUnitMultiBttnEle = document.getElementByID("twenty-unit-multi");
+    
+    function twentyUnitMultiPurchaser() {
+        if (gameState.totalNumOfProperties >= 2500000){
+            gameState.totalNumOfProperties -= 2500000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 35000;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    twentyUnitMultiBttnEle.addEventListener("click", twentyUnitMultiPurchaser);
+    
+    // Sixth Producer
+    let fiftyUnitMultiBttnEle = document.getElementByID("fifty-unit-multi");
+    
+    function fourUnitMultiPurchaser() {
+        if (gameState.totalNumOfProperties >= 15000000){
+            gameState.totalNumOfProperties -= 15000000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 90000;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    fiftyUnitMultiBttnEle.addEventListener("click", fiftyUnitMultiPurchaser);
+    
+    // Seventh Producer
+    let oneHundredUnitMultiBttnEle = document.getElementByID("ond-hundred-unit-multi");
+    
+    function fourUnitMultiPurchaser() {
+        if (gameState.totalNumOfProperties >= 30000000){
+            gameState.totalNumOfProperties -= 30000000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 200000;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    ondhundredUnitMultiBttnEle.addEventListener("click", oneHundredUnitMultiPurchaser);
+    
+    // Eigth Producer
+    let threeHundredUnitMultiBttnEle = document.getElementByID("three-hundred-unit-multi");
+    
+    function fourUnitMultiPurchaser() {
+        if (gameState.totalNumOfProperties >= 75000000){
+            gameState.totalNumOfProperties -= 75000000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 600000;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    threeHundredUnitMultiBttnEle.addEventListener("click", threeHundredUnitMultiPurchaser);
+    
+    // Ninth Producer
+    let sixHundredUnitMultiBttnEle = document.getElementByID("six-hundred-unit-multi");
+    
+    function fourUnitMultiPurchaser() {
+        if (gameState.totalNumOfProperties >= 125000000){
+            gameState.totalNumOfProperties -= 125000000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 1800000;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    sixHundredUnitMultiBttnEle.addEventListener("click", sixHundredUnitMultiPurchaser);
+    
+
 // Begin Game
 function startIncrementingMoney() {
     gameState.totalNumOfProperties += gameState.numOfMonthlyIncome;
