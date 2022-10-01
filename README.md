@@ -1,4 +1,4 @@
-# Real-Estate-Cookie-Cutter
+# Real-Estate-Clicker-Game
 
 This is a clicker based game.
 
