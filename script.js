@@ -10,7 +10,20 @@ let MonthlyIncomeText = document.getElementByID("monthly-income");
 let amountOfMoneyEle = document.getElementById("amount-of-money");
 
 // Event Listeners
+let amountOfMoneyElement = document.getElementByID("amount-of-money-block")
+
+function amountOfMoneyIncrementer(){
+    gameState.totalNumOfProperties = gameState.totalNumOfProperties + 1;
+    amountOfMoneyEle.textContent = gameState.totalNumOfProperties;
+};
+
+
+
+
+
+
 let passiveIncomeGenerated: 
+
 
 let totalNumOfResources = 0;
 
