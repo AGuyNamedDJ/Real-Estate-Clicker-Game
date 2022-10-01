@@ -38,7 +38,38 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
 
     // Set Interval & Clear Interval
     let startBttnEle = document.getElementById("start-bttn"); 
+
+    // Second Producer
+    let abandonedHouseBttnEle = document.getElementByID("abandoned-house");
+    
+    function abandonedHousePurchaser() {
+        if (gameState.totalNumOfProperties >= 1000){
+            gameState.totalNumOfProperties -= 1000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 1400;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    abandonedHouseBttnEle.addEventListener("click", abandonedHousePurchaser);
    
+    // Third Producer
+    let abandoned2UnitHouseBttnEle = document.getElementByID("abandoned-2-unit-house");
+    
+    function abandonedHousePurchaser() {
+        if (gameState.totalNumOfProperties >= 10000){
+            gameState.totalNumOfProperties -= 10000;
+            accountBalanceEle.textContent = gameState.totalNumOfProperties;
+            gameState.numOfMonthlyIncome += 3200;
+            MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
+        }
+    };
+
+    // Callback
+    abandoned2UnitHouseBttnEle.addEventListener("click", abandoned2UnitHousePurchaser);
+
+    
 // Begin Game
 function startIncrementingMoney() {
     gameState.totalNumOfProperties += gameState.numOfMonthlyIncome;
