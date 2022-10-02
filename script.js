@@ -55,9 +55,9 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     abandonedHouseBttnEle.addEventListener("click", abandonedHousePurchaser);
    
     // Third Producer
-    let abandonedTwoUnitHouseBttnEle = document.getElementById("abandoned-2-unit-house");
+    let abandonedTwoUnitHouseBttnEle = document.getElementById("abandoned-two-unit-house");
     
-    function abandonedHousePurchaser() {
+    function abandonedTwoUnitHousePurchaser() {
         if (gameState.totalNumOfProperties >= 10000){
             gameState.totalNumOfProperties -= 10000;
             accountBalanceEle.textContent = gameState.totalNumOfProperties;
@@ -67,7 +67,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
     // Callback
-    abandonedTwoUnitHouseBttnEle.addEventListener("click", abandoned2UnitHousePurchaser);
+    abandonedTwoUnitHouseBttnEle.addEventListener("click", abandonedTwoUnitHousePurchaser);
 
     // Fourth Producer
     let fourUnitMultiBttnEle = document.getElementById("four-unit-multi");
