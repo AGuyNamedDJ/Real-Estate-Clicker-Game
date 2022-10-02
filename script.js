@@ -85,7 +85,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     fourUnitMultiBttnEle.addEventListener("click", fourUnitMultiPurchaser);
 
     // Fifth Producer
-    let twentyUnitMultiBttnEle = document.getElementById("twenty-unit-multi");
+    let twentyUnitMidriseBttnEle = document.getElementById("twenty-unit-midrise");
     
     function twentyUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 2500000){
@@ -97,10 +97,10 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
     // Callback
-    twentyUnitMultiBttnEle.addEventListener("click", twentyUnitMultiPurchaser);
+    twentyUnitMidriseBttnEle.addEventListener("click", twentyUnitMidrisePurchaser);
     
     // Sixth Producer
-    let fiftyUnitMultiBttnEle = document.getElementById("fifty-unit-multi");
+    let fiftyUnitMidriseBttnEle = document.getElementById("fifty-unit-midrise");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 15000000){
@@ -112,10 +112,10 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
     // Callback
-    fiftyUnitMultiBttnEle.addEventListener("click", fiftyUnitMultiPurchaser);
+    fiftyUnitMidriseBttnEle.addEventListener("click", fiftyUnitMidrisePurchaser);
     
     // Seventh Producer
-    let oneHundredUnitMultiBttnEle = document.getElementById("ond-hundred-unit-multi");
+    let oneHundredUnitHighriseBttnEle = document.getElementById("ond-hundred-unit-Highrise");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 30000000){
@@ -127,10 +127,10 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
     // Callback
-    ondhundredUnitMultiBttnEle.addEventListener("click", oneHundredUnitMultiPurchaser);
+    ondhundredUnitHighriseBttnEle.addEventListener("click", oneHundredUnitHighrisePurchaser);
     
     // Eigth Producer
-    let threeHundredUnitMultiBttnEle = document.getElementById("three-hundred-unit-multi");
+    let threeHundredUnitHighriseBttnEle = document.getElementById("three-hundred-unit-highrise");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 75000000){
@@ -142,10 +142,10 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
     // Callback
-    threeHundredUnitMultiBttnEle.addEventListener("click", threeHundredUnitMultiPurchaser);
+    threeHundredUnitHighriseBttnEle.addEventListener("click", threeHundredUnitHighrisePurchaser);
     
     // Ninth Producer
-    let sixHundredUnitMultiBttnEle = document.getElementById("six-hundred-unit-multi");
+    let sixHundredUnitHighriseBttnEle = document.getElementById("six-hundred-unit-highrise");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 125000000){
@@ -157,7 +157,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
 // Callback
-sixHundredUnitMultiBttnEle.addEventListener("click", sixHundredUnitMultiPurchaser);
+sixHundredUnitHighriseBttnEle.addEventListener("click", sixHundredUnitHighrisePurchaser);
     
 // Set Interval Timer
 setInterval(nameOfCallbackFunc, numOfMSThatThisLoopWillRepeat);
