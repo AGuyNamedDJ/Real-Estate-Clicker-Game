@@ -3,22 +3,24 @@ let gameState = {
     totalNumOfProperties: 0,
     numOfMonthlyIncome: 0,
     intervalLoopID: undefined
-};
+}
 
 // Variables
-let MonthlyIncomeText = document.getElementByID("monthly-income");
+let MonthlyIncomeText = document.getElementById("monthly-income");
 let accountBalanceEle = document.getElementById("account-balance");
+
 
 // Event Listeners
 let amountOfMoneyElement = document.getElementByID("amount-of-money");
 
 function amountOfMoneyIncrementer() {
     gameState.totalNumOfProperties = gameState.totalNumOfProperties + 1;
-    accountBalanceEle.textContent = gameState.totalNumOfProperties;
+    amountOfMoneyElement.textContent = gameState.totalNumOfProperties;
 };
 
 // Event Listener
 amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
+
 
 // Income Producers
     // First Producer
@@ -31,13 +33,11 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 1000;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     homeOwnerGrantBttnEle.addEventListener("click", homeGrantPurchaser);
 
-    // Set Interval & Clear Interval
-    let startBttnEle = document.getElementById("start-bttn"); 
 
     // Second Producer
     let abandonedHouseBttnEle = document.getElementByID("abandoned-house");
@@ -49,7 +49,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 1400;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     abandonedHouseBttnEle.addEventListener("click", abandonedHousePurchaser);
@@ -64,7 +64,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 3200;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     abandoned2UnitHouseBttnEle.addEventListener("click", abandoned2UnitHousePurchaser);
@@ -79,7 +79,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 7500;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     fourUnitMultiBttnEle.addEventListener("click", fourUnitMultiPurchaser);
@@ -94,7 +94,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 35000;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     twentyUnitMultiBttnEle.addEventListener("click", twentyUnitMultiPurchaser);
@@ -109,7 +109,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 90000;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     fiftyUnitMultiBttnEle.addEventListener("click", fiftyUnitMultiPurchaser);
@@ -124,7 +124,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 200000;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     ondhundredUnitMultiBttnEle.addEventListener("click", oneHundredUnitMultiPurchaser);
@@ -139,7 +139,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 600000;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
     // Callback
     threeHundredUnitMultiBttnEle.addEventListener("click", threeHundredUnitMultiPurchaser);
@@ -154,23 +154,35 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
             gameState.numOfMonthlyIncome += 1800000;
             MonthlyIncomeText.textContent = gameState.numOfMonthlyIncome;
         }
-    };
+    }
 
-    // Callback
-    sixHundredUnitMultiBttnEle.addEventListener("click", sixHundredUnitMultiPurchaser);
+// Callback
+sixHundredUnitMultiBttnEle.addEventListener("click", sixHundredUnitMultiPurchaser);
     
+// Set Interval
+setInterval(nameOfCallbackFunc, numOfMSThatThisLoopWillRepeat);
+    
+// Clear Interval
+clearInterval(idNumOfTheIntervalLoop);
+
+
+    // --- 
+    // Complete
+
+let startBttnEle = document.getElementById("start-bttn"); 
+
 
 // Begin Game
 function startIncrementingMoney() {
     gameState.totalNumOfProperties += gameState.numOfMonthlyIncome;
     accountBalanceEle.textContent = gameState.totalNumOfProperties; 
-};
+}
 
 // Begin Looping
 function setUpIncrementationInterval() {
     gameState.intervalLoopID = setInterval(startIncrementingMoney, 1000) 
     console.log(gameState.intervalLoopID);
-};
+}
 
 // Start Bttn
 startBttnEle.addEventListener("click", setUpIncrementationInterval);
@@ -180,7 +192,7 @@ let pauseBttnEle = document.getElementById("pause-bttn");
 
 function pauseIntervalLoop() {
     clearInterval(gameState.intervalLoopID);
-};
+}
 
 pauseBttnEle.addEventListener("click", pauseIntervalLoop);
 
