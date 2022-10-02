@@ -11,7 +11,7 @@ let accountBalanceEle = document.getElementById("account-balance");
 
 
 // Event Listeners
-let amountOfMoneyElement = document.getElementByID("amount-of-money");
+let amountOfMoneyElement = document.getElementById("amount-of-money");
 
 function amountOfMoneyIncrementer() {
     gameState.totalNumOfProperties = gameState.totalNumOfProperties + 1;
@@ -24,7 +24,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
 
 // Income Producers
     // First Producer
-    let homeOwnerGrantBttnEle = document.getElementByID("home-owner-grant");
+    let homeOwnerGrantBttnEle = document.getElementById("home-owner-grant");
     
     function homeGrantPurchaser() {
         if (gameState.totalNumOfProperties >= 0){
@@ -40,7 +40,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
 
 
     // Second Producer
-    let abandonedHouseBttnEle = document.getElementByID("abandoned-house");
+    let abandonedHouseBttnEle = document.getElementById("abandoned-house");
     
     function abandonedHousePurchaser() {
         if (gameState.totalNumOfProperties >= 1000){
@@ -55,7 +55,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     abandonedHouseBttnEle.addEventListener("click", abandonedHousePurchaser);
    
     // Third Producer
-    let abandoned2UnitHouseBttnEle = document.getElementByID("abandoned-2-unit-house");
+    let abandonedTwoUnitHouseBttnEle = document.getElementById("abandoned-2-unit-house");
     
     function abandonedHousePurchaser() {
         if (gameState.totalNumOfProperties >= 10000){
@@ -67,10 +67,10 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
     // Callback
-    abandoned2UnitHouseBttnEle.addEventListener("click", abandoned2UnitHousePurchaser);
+    abandonedTwoUnitHouseBttnEle.addEventListener("click", abandoned2UnitHousePurchaser);
 
     // Fourth Producer
-    let fourUnitMultiBttnEle = document.getElementByID("four-unit-multi");
+    let fourUnitMultiBttnEle = document.getElementById("four-unit-multi");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 300000){
@@ -85,7 +85,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     fourUnitMultiBttnEle.addEventListener("click", fourUnitMultiPurchaser);
 
     // Fifth Producer
-    let twentyUnitMultiBttnEle = document.getElementByID("twenty-unit-multi");
+    let twentyUnitMultiBttnEle = document.getElementById("twenty-unit-multi");
     
     function twentyUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 2500000){
@@ -100,7 +100,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     twentyUnitMultiBttnEle.addEventListener("click", twentyUnitMultiPurchaser);
     
     // Sixth Producer
-    let fiftyUnitMultiBttnEle = document.getElementByID("fifty-unit-multi");
+    let fiftyUnitMultiBttnEle = document.getElementById("fifty-unit-multi");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 15000000){
@@ -115,7 +115,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     fiftyUnitMultiBttnEle.addEventListener("click", fiftyUnitMultiPurchaser);
     
     // Seventh Producer
-    let oneHundredUnitMultiBttnEle = document.getElementByID("ond-hundred-unit-multi");
+    let oneHundredUnitMultiBttnEle = document.getElementById("ond-hundred-unit-multi");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 30000000){
@@ -130,7 +130,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     ondhundredUnitMultiBttnEle.addEventListener("click", oneHundredUnitMultiPurchaser);
     
     // Eigth Producer
-    let threeHundredUnitMultiBttnEle = document.getElementByID("three-hundred-unit-multi");
+    let threeHundredUnitMultiBttnEle = document.getElementById("three-hundred-unit-multi");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 75000000){
@@ -145,7 +145,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     threeHundredUnitMultiBttnEle.addEventListener("click", threeHundredUnitMultiPurchaser);
     
     // Ninth Producer
-    let sixHundredUnitMultiBttnEle = document.getElementByID("six-hundred-unit-multi");
+    let sixHundredUnitMultiBttnEle = document.getElementById("six-hundred-unit-multi");
     
     function fourUnitMultiPurchaser() {
         if (gameState.totalNumOfProperties >= 125000000){
@@ -159,10 +159,10 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
 // Callback
 sixHundredUnitMultiBttnEle.addEventListener("click", sixHundredUnitMultiPurchaser);
     
-// Set Interval
+// Set Interval Timer
 setInterval(nameOfCallbackFunc, numOfMSThatThisLoopWillRepeat);
     
-// Clear Interval
+// Clear Interval Timer
 clearInterval(idNumOfTheIntervalLoop);
 
 
@@ -193,6 +193,8 @@ let pauseBttnEle = document.getElementById("pause-bttn");
 function pauseIntervalLoop() {
     clearInterval(gameState.intervalLoopID);
 }
+
+let count = 0;
 
 pauseBttnEle.addEventListener("click", pauseIntervalLoop);
 
