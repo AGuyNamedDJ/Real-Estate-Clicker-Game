@@ -10,12 +10,6 @@ How high can you go?
 
 ---
 
-Things to Review
-Fix Home Grant Picture
-Fix 300 unit highrise picture
-
----
-
 Game Design
 Clicker = Money (1 Second = 1 Months Rent Payments)
 
