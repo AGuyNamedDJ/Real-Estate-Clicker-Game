@@ -164,7 +164,7 @@ function alertMe(){
 }
 
 // Set Interval Timer
-let intervalLoopId =  setInterval(alertMe, 1000);
+let intervalLoopId =  setInterval(alertMe, 2000);
     
 // Clear Interval Timer
 clearInterval(intervalLoopId);
@@ -184,7 +184,7 @@ function startIncrementingMoney() {
 
 // Begin Looping
 function setUpIncrementationInterval() {
-    gameState.intervalLoopID = setInterval(startIncrementingMoney, 1000) 
+    gameState.intervalLoopID = setInterval(startIncrementingMoney, 2000) 
     console.log(gameState.intervalLoopId);
 }
 
