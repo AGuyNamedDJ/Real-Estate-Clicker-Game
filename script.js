@@ -196,12 +196,8 @@ let pauseBttnEle = document.getElementById("pause-bttn");
 
 function pauseIntervalLoop() {
     clearInterval(gameState.intervalLoopId);
-}
-
-let count = 0;
+};
 
 pauseBttnEle.addEventListener("click", pauseIntervalLoop);
-
-// -------END-----------
 
 
