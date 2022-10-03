@@ -115,9 +115,9 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     fiftyUnitMidriseBttnEle.addEventListener("click", fiftyUnitMidrisePurchaser);
     
     // Seventh Producer
-    let oneHundredUnitHighriseBttnEle = document.getElementById("one-hundred-unit-Highrise");
+    let oneHundredUnitHighriseBttnEle = document.getElementById("one-hundred-unit-highrise");
     
-    function oneHundredunitHighrisePurchaser() {
+    function oneHundredUnitHighrisePurchaser() {
         if (gameState.totalNumOfProperties >= 30000000){
             gameState.totalNumOfProperties -= 30000000;
             accountBalanceEle.textContent = gameState.totalNumOfProperties;
