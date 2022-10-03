@@ -87,7 +87,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     // Fifth Producer
     let twentyUnitMidriseBttnEle = document.getElementById("twenty-unit-midrise");
     
-    function twentyUnitMultiPurchaser() {
+    function twentyUnitMidrisePurchaser() {
         if (gameState.totalNumOfProperties >= 2500000){
             gameState.totalNumOfProperties -= 2500000;
             accountBalanceEle.textContent = gameState.totalNumOfProperties;
@@ -102,7 +102,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     // Sixth Producer
     let fiftyUnitMidriseBttnEle = document.getElementById("fifty-unit-midrise");
     
-    function fourUnitMultiPurchaser() {
+    function fiftyUnitMidrisePurchaser() {
         if (gameState.totalNumOfProperties >= 15000000){
             gameState.totalNumOfProperties -= 15000000;
             accountBalanceEle.textContent = gameState.totalNumOfProperties;
@@ -115,9 +115,9 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     fiftyUnitMidriseBttnEle.addEventListener("click", fiftyUnitMidrisePurchaser);
     
     // Seventh Producer
-    let oneHundredUnitHighriseBttnEle = document.getElementById("ond-hundred-unit-Highrise");
+    let oneHundredUnitHighriseBttnEle = document.getElementById("one-hundred-unit-Highrise");
     
-    function fourUnitMultiPurchaser() {
+    function oneHundredunitHighrisePurchaser() {
         if (gameState.totalNumOfProperties >= 30000000){
             gameState.totalNumOfProperties -= 30000000;
             accountBalanceEle.textContent = gameState.totalNumOfProperties;
@@ -127,12 +127,12 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     }
 
     // Callback
-    ondhundredUnitHighriseBttnEle.addEventListener("click", oneHundredUnitHighrisePurchaser);
+    oneHundredUnitHighriseBttnEle.addEventListener("click", oneHundredUnitHighrisePurchaser);
     
     // Eigth Producer
     let threeHundredUnitHighriseBttnEle = document.getElementById("three-hundred-unit-highrise");
     
-    function fourUnitMultiPurchaser() {
+    function threeHundredUnitHighrisePurchaser() {
         if (gameState.totalNumOfProperties >= 75000000){
             gameState.totalNumOfProperties -= 75000000;
             accountBalanceEle.textContent = gameState.totalNumOfProperties;
@@ -147,7 +147,7 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
     // Ninth Producer
     let sixHundredUnitHighriseBttnEle = document.getElementById("six-hundred-unit-highrise");
     
-    function fourUnitMultiPurchaser() {
+    function sixHundredUnitHighrisePurchaser() {
         if (gameState.totalNumOfProperties >= 125000000){
             gameState.totalNumOfProperties -= 125000000;
             accountBalanceEle.textContent = gameState.totalNumOfProperties;
