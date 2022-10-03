@@ -159,11 +159,15 @@ amountOfMoneyElement.addEventListener("click", amountOfMoneyIncrementer)
 // Callback
 sixHundredUnitHighriseBttnEle.addEventListener("click", sixHundredUnitHighrisePurchaser);
     
+function alertMe(){
+    alert("Not enough money! ")
+}
+
 // Set Interval Timer
-setInterval(nameOfCallbackFunc, numOfMSThatThisLoopWillRepeat);
+let intervalLoopId =  setInterval(alertMe, 1000);
     
 // Clear Interval Timer
-clearInterval(idNumOfTheIntervalLoop);
+clearInterval(intervalLoopId);
 
 
     // --- 
@@ -181,7 +185,7 @@ function startIncrementingMoney() {
 // Begin Looping
 function setUpIncrementationInterval() {
     gameState.intervalLoopID = setInterval(startIncrementingMoney, 1000) 
-    console.log(gameState.intervalLoopID);
+    console.log(gameState.intervalLoopId);
 }
 
 // Start Bttn
@@ -191,7 +195,7 @@ startBttnEle.addEventListener("click", setUpIncrementationInterval);
 let pauseBttnEle = document.getElementById("pause-bttn");
 
 function pauseIntervalLoop() {
-    clearInterval(gameState.intervalLoopID);
+    clearInterval(gameState.intervalLoopId);
 }
 
 let count = 0;
